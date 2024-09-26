@@ -21,7 +21,7 @@
                 :src="cosplayerData.photo[0].thumbnails.card_cover.signedUrl"
               />
             </div>
-            <div class="py-3 px-1">
+            <div class="py-3 sm:px-[1rem] xs:px-[1rem]">
               <div
                 class="font-black text-[1.5rem] [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
               >
