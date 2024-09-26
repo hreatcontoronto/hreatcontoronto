@@ -82,13 +82,13 @@
             Clean
           </button>
         </div>
-        <div v-if="thanks" class="lg:col-span-full text-center text-[1.2rem] grid grid-cols-1">
+        <div v-if="thanks" class="lg:col-span-full text-center xs:text-[3rem] lg:text-[1.2rem] grid grid-cols-1">
           <span>Thanks for your comments and suggestions!</span>
           <span>We will replay you as soon as possible.</span>
         </div>
         <div
           v-if="errorMsg"
-          class="lg:col-span-full text-center text-[1.2rem] grid grid-cols-1 text-red-200"
+          class="lg:col-span-full text-center xs:text-[3rem] lg:text-[1.2rem] grid grid-cols-1 text-red-200"
         >
           <span>Oops! Something went wrong. You can submit again.</span>
         </div>
