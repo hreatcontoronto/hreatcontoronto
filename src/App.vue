@@ -16,7 +16,7 @@ function clickToIG() {
 </script>
 
 <template>
-  <div class="w-screen min:h-full bg-gradient-to-r from-[#330831] to-[#134b75] py-15 text-white">
+  <div class="bg-cover w-screen min-h-screen bg-gradient-to-r from-[#330831] to-[#134b75] py-15 text-white">
     <div class="flex items-center justify-center">
       <img class="h-[180px]" src="/icon.png" />
     </div>
