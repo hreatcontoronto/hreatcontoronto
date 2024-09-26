@@ -72,7 +72,7 @@
           </div>
         </div>
         <div class="py-2">
-          <div class="text-[1rem] text-white font-black hover:drop-shadow-lg">
+          <div class="lg:text-[1rem]  sm:text-[1.2rem] text-white font-black hover:drop-shadow-lg">
             {{ baseEventData.description }}
           </div>
         </div>

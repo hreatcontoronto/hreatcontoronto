@@ -41,7 +41,7 @@
               >
                 Personal Website
               </div>
-              <div class="text-[0.95rem] py-3">
+              <div class="lg:text-[0.95rem]  sm:text-[1.2rem] py-3">
                 {{ photograherData.description }}
               </div>
             </div>

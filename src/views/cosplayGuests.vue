@@ -33,7 +33,7 @@
               >
                 @{{ cosplayerData.igName }}
               </div>
-              <div class="text-[0.95rem] py-3">
+              <div class="xs:text-[1.2rem] sm:text-[1.2rem] lg:text-[0.95rem] py-3">
                 {{ cosplayerData.description }}
               </div>
             </div>
