@@ -1,5 +1,48 @@
 <template>
-  <div class="grid grid-cols-1 gap-2 px-[5rem] lg:px-[4rem] py-[10rem]">
+  <div class="grid grid-cols-1 gap-2 px-[5rem] lg:px-[4rem] py-[1rem]">
+    <div class="text-center pt-[1rem]">
+      <span class="text-[3rem] text-white font-black [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]">
+        We will start
+      </span>
+    </div>
+    <div class="lg:px-[15rem] text-center pb-[3rem]">
+      <vue-countdown :time="time" :interval="100" v-slot="{ days, hours, minutes, seconds }">
+        <div class="grid lg:grid-cols-4 text-white gap-[1rem]">
+          <div class="grid lg:grid-cols-1">
+            <div class="text-[3.5rem] font-black text-[#d6d493]">
+              {{ days }}
+            </div>
+            <div class="font-bold text-[1.5rem]">
+              Days
+            </div>
+          </div>
+          <div class="grid lg:grid-cols-1">
+            <div class="text-[3.5rem] font-black text-[#d6d493]">
+              {{ hours }}
+            </div>
+            <div class="font-bold text-[1.5rem]">
+              Hours 
+            </div>
+          </div>
+          <div class="grid lg:grid-cols-1">
+            <div class="text-[3.5rem] font-black text-[#d6d493]">
+              {{ minutes }}
+            </div>
+            <div class="font-bold text-[1.5rem]">
+              Minutes
+            </div>
+          </div>
+          <div class="grid lg:grid-cols-1">
+            <div class="text-[3.5rem] font-black text-[#d6d493]">
+              {{ seconds }}
+            </div>
+            <div class="font-bold text-[1.5rem]">
+              Seconds
+            </div>
+          </div>
+        </div>
+      </vue-countdown>
+    </div>
     <div class="lg:px-[6rem] grid lg:grid-cols-2 xl:grid-cols-4 gap-2">
       <iframe
         class="rounded-xl lg:col-sapn-full h-[100%] w-[100%]"
@@ -49,12 +92,7 @@ import { ref, defineComponent } from 'vue'
 import { apiData } from '../tools/fetchData'
 
 const baseEventData: any = ref({})
-
-const footerData = ref({
-  name: 'Felix Mak',
-  email: 'felix9611.ca@gmail.com',
-  year: new Date().getFullYear()
-})
+let time: any = ref('')
 
 async function loadBaseInfo() {
   const data: any = await apiData(
@@ -98,13 +136,26 @@ async function loadBaseInfo() {
     formattedHeldDate: finalHeldDate,
     formattedCloseDate: finalCloseDate
   }
+
+  let heldDateString = baseEventData.value.heldDate
+
+
+  const futureDate: any = new Date(heldDateString.replace(' ', 'T'))
+  const now: any = new Date()
+  time.value = futureDate - now
+
+  
+    
 }
 
 export default defineComponent({
   setup() {
+    
+    const now: any = new Date()
+    const newYear: any = new Date(now.getFullYear() + 1, 0, 1)
     return {
       baseEventData,
-      footerData
+      time
     }
   },
   created() {
