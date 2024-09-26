@@ -79,7 +79,7 @@
         </div>
         <div class="py-2">
           <button
-            class="lg:text-[1rem] xs:text-[3rem] font-bold bg-[#241137] lg:p-3 xs:p-6 rounded-lg shadow-2xl shadow-white/10 hover:bg-[#130126]"
+            class="lg:text-[1rem] xs:text-[3rem] font-bold bg-[#241137] lg:p-3 xs:p-6 rounded-xl shadow-2xl shadow-white/50 hover:bg-[#130126]"
             @click="loadAdmissionPage(baseEventData.TicketSaleURL)"
           >
             Buy Admission
