@@ -1,12 +1,12 @@
 <template>
   <div class="text-white py-6">
     <div
-      class="flex items-center justify-center font-bold text-[3rem] [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
+      class="flex items-center justify-center font-black xs:text-[4rem] sm:text-[3.5rem] lg:text-[1.5rem]  xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)] [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
     >
       Our Team
     </div>
     <div
-      class="px-[5rem] text-center font-bold text-[1.6rem] [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
+      class="px-[5rem] text-center font-black xs:text-[4rem] sm:text-[3.5rem] lg:text-[1.5rem] xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)] [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
     >
       We are organizers in the Toronto Hreatcon.
     </div>
@@ -23,21 +23,21 @@
             </div>
             <div class="py-3 px-1">
               <div
-                class="font-black text-[1.5rem] [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
+                class="font-black xs:text-[4rem] sm:text-[3.5rem] lg:text-[1.5rem] xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)] [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
               >
                 {{ founderData.founderName }}
               </div>
               <div
-                class="text-[1.3rem] [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
+                class="font-black xs:text-[4rem] sm:text-[3.5rem] lg:text-[1.3rem] xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)] [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
               >
                 {{ founderData.cosPhoto }}
               </div>
               <div
-                class="text-[1.3rem] [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
+                class="font-black xs:text-[4rem] sm:text-[3.5rem] lg:text-[1.3rem] xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)] [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
               >
                 {{ founderData.role }}
               </div>
-              <div class="text-[0.95rem] py-2">
+              <div class="xs:text-[2.3rem] sm:text-[2rem] lg:text-[0.95rem] py-2">
                 {{ founderData.description }}
               </div>
             </div>

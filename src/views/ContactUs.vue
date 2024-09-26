@@ -1,26 +1,26 @@
 <template>
   <div class="text-white py-6">
     <div
-      class="flex items-center justify-center font-bold text-[3rem] [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
+      class="flex items-center justify-center font-bold xs:text-[4.5rem] lg:text-[3rem] xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)]  [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
     >
       Contact Us
     </div>
     <div class="px-[5rem] lg:px-[10rem] text-center">
       <div
-        class="font-bold text-[1.2rem] [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
+        class="font-bold xs:text-[3.6rem] lg:text-[1.2rem] xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)]  [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
       >
         Feel free to comments and give any suggests for better in Toronto Hreatcon and the website.
       </div>
       <div
-        class="font-bold text-[1.2rem] [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
+        class="font-bold xs:text-[3.6rem] lg:text-[1.2rem] xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)]  [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
       >
         We will all to review and answer your questions.
       </div>
     </div>
-    <div class="px-[5rem] lg:px-[16rem] py-[3rem]">
+    <div class="px-[5rem] lg:px-[16rem] py-[3rem] xs:text-[3rem] lg:text-[1rem] ">
       <div class="grid lg:grid-cols-2 gap-3 bg-white bg-opacity-25 p-6 rounded-xl">
         <div>
-          <div class="text-center py-2 text-[1rem] font-bold">Your Name</div>
+          <div class="text-center py-2 font-bold">Your Name</div>
           <input
             class="border border-white bg-transparent text-white rounded-lg p-2 font-bold w-full"
             type="text"
@@ -32,7 +32,7 @@
           </div>
         </div>
         <div>
-          <div class="text-center py-2 text-[1rem] font-bold">Your Email Address</div>
+          <div class="text-center py-2 font-bold">Your Email Address</div>
           <input
             class="border border-white bg-transparent text-white rounded-lg p-2 font-bold w-full"
             type="email"
@@ -46,7 +46,7 @@
           </div>
         </div>
         <div class="lg:col-span-full">
-          <div class="text-center py-2 text-[1rem] font-bold">Your Question</div>
+          <div class="text-center py-2 font-bold">Your Question</div>
           <input
             class="border border-white bg-transparent text-white rounded-lg p-2 font-bold w-full"
             type="text"
@@ -60,7 +60,7 @@
           </div>
         </div>
         <div class="lg:col-span-full">
-          <div class="text-center py-2 text-[1rem] font-bold">Your Question</div>
+          <div class="text-center py-2 font-bold">Your Question</div>
           <textarea
             rows="4"
             class="border border-white bg-transparent text-white rounded-lg p-2 font-bold w-full"

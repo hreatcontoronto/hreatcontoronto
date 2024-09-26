@@ -1,12 +1,12 @@
 <template>
   <div class="text-white py-6">
     <div
-      class="flex items-center justify-center font-bold text-[3rem] [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
+      class="flex items-center justify-center font-bold xs:text-[4.5rem] lg:text-[3rem]  xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)] [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
     >
       Photograhers
     </div>
     <div
-      class="px-[5rem] text-center font-bold text-[1.6rem] [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
+      class="px-[5rem] text-center font-bold xs:text-[3rem] xs:font-400 lg:text-[1.6rem]  xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)] [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
     >
       We invited these photograhers coming to Toronto Hreatcon!
     </div>
@@ -21,27 +21,27 @@
                 :src="photograherData.photo[0].thumbnails.card_cover.signedUrl"
               />
             </div>
-            <div class="py-3 lg:px-1 sm:px-[1rem] xs:px-[1rem]">
+            <div class="py-3 lg:px-1 sm:px-[3rem] xs:px-[1rem]">
               <div
-                class="font-black text-[1.5rem] [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
+                class="xs:text-[3rem]  font-black lg:text-[1.5rem]  xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)] [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
               >
                 {{ photograherData.name }}
               </div>
               <div
                 v-if="photograherData.igName"
                 @click="goToPage(photograherData.igUrl)"
-                class="underline font-black text-[1.1rem] [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
+                class="underline font-black xs:text-[2.5rem]  lg:text-[1.1rem]  xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)] [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
               >
                 @{{ photograherData.igName }}
               </div>
               <div
                 v-if="photograherData.personURL"
                 @click="goToPage(photograherData.personURL)"
-                class="underline font-black text-[1.1rem] [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
+                class="underline font-black xs:text-[2.5rem]  lg:text-[1.1rem]  xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)] [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
               >
                 Personal Website
               </div>
-              <div class="lg:text-[0.95rem]  sm:text-[1.2rem] py-3">
+              <div class="xs:text-[2.3rem] sm:text-[2rem] lg:text-[0.95rem] py-3">
                 {{ photograherData.description }}
               </div>
             </div>

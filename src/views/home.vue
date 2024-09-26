@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-cols-1 gap-2 px-[5rem] lg:px-[4rem] py-[1rem]">
     <div class="text-center pt-[1rem]">
-      <span class="text-[3rem] text-white font-black [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]">
+      <span class="text-[3rem] text-white font-black xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)] [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]">
         We will start
       </span>
     </div>
@@ -9,34 +9,34 @@
       <vue-countdown :time="time" :interval="100" v-slot="{ days, hours, minutes, seconds }">
         <div class="grid lg:grid-cols-4 text-white gap-[1rem]">
           <div class="grid lg:grid-cols-1">
-            <div class="text-[3.5rem] font-black text-[#d6d493]">
+            <div class="xs:text-[6rem] lg:text-[3.5rem] font-black text-[#d6d493]">
               {{ days }}
             </div>
-            <div class="font-bold text-[1.5rem]">
+            <div class="font-bold xs:text-[4rem] lg:text-[1.5rem]">
               Days
             </div>
           </div>
           <div class="grid lg:grid-cols-1">
-            <div class="text-[3.5rem] font-black text-[#d6d493]">
+            <div class="xs:text-[6rem] lg:text-[3.5rem] font-black text-[#d6d493]">
               {{ hours }}
             </div>
-            <div class="font-bold text-[1.5rem]">
+            <div class="font-bold xs:text-[4rem] lg:text-[1.5rem]">
               Hours 
             </div>
           </div>
           <div class="grid lg:grid-cols-1">
-            <div class="text-[3.5rem] font-black text-[#d6d493]">
+            <div class="xs:text-[6rem] lg:text-[3.5rem] font-black text-[#d6d493]">
               {{ minutes }}
             </div>
-            <div class="font-bold text-[1.5rem]">
+            <div class="font-bold xs:text-[4rem] lg:text-[1.5rem]">
               Minutes
             </div>
           </div>
           <div class="grid lg:grid-cols-1">
-            <div class="text-[3.5rem] font-black text-[#d6d493]">
+            <div class="xs:text-[6rem] lg:text-[3.5rem] font-black text-[#d6d493]">
               {{ seconds }}
             </div>
-            <div class="font-bold text-[1.5rem]">
+            <div class="font-bold xs:text-[4rem] lg:text-[1.5rem]">
               Seconds
             </div>
           </div>
@@ -55,30 +55,30 @@
       </iframe>
       <div class="xl:col-span-3 xl:px-[8rem]">
         <div
-          class="text-[2rem] text-white font-black hover:drop-shadow-lg [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
+          class="xs:text-[4.2rem] lg:text-[2rem] text-white font-black hover:drop-shadow-lg xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)] [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
         >
           {{ baseEventData.formattedHeldDate }} - {{ baseEventData.formattedCloseDate }}
         </div>
         <div class="py-2">
           <div
-            class="text-[1.8rem] text-white font-black hover:drop-shadow-lg [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
+            class="xs:text-[4.2rem] lg:text-[1.8rem] text-white font-black hover:drop-shadow-lg xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)] [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
           >
             {{ baseEventData.address }}, {{ baseEventData.city }}, {{ baseEventData.provinceCode }}
           </div>
           <div
-            class="text-[1.8rem] text-white font-black hover:drop-shadow-lg [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
+            class="xs:text-[4.2rem] lg:text-[1.8rem] text-white font-black hover:drop-shadow-lg xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)] [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
           >
             {{ baseEventData.postCode }}
           </div>
         </div>
         <div class="py-2">
-          <div class="lg:text-[1rem]  sm:text-[1.2rem] text-white font-black hover:drop-shadow-lg">
+          <div class="lg:text-[1rem]  xs:text-[2rem] text-white font-black hover:drop-shadow-lg">
             {{ baseEventData.description }}
           </div>
         </div>
         <div class="py-2">
           <button
-            class="font-bold bg-[#241137] p-3 rounded-lg shadow-xl shadow-white/10 hover:bg-[#130126]"
+            class="lg:text-[1rem] xs:text-[3rem] font-bold bg-[#241137] p-3 rounded-lg shadow-2xl shadow-white/10 hover:bg-[#130126]"
             @click="loadAdmissionPage(baseEventData.TicketSaleURL)"
           >
             Buy Admission

@@ -16,31 +16,31 @@ function clickToIG() {
     <div class="flex items-center justify-center">
       <img class="h-[180px]" src="/icon.png" />
     </div>
-    <div class="py-2 text-[1.5rem] grid grid-cols-1 lg:grid-cols-6 gap-3 lg:px-[10rem]">
+    <div class="py-2 xs:text-[4rem] lg:text-[1.5rem] grid grid-cols-1 lg:grid-cols-6 gap-3 lg:px-[10rem]">
       <button @click="$router.push('/')">
         <div
-          class="text-white font-black hover:drop-shadow-lg [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
+          class="text-white font-black hover:drop-shadow-lg  xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)] [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
         >
           Home
         </div>
       </button>
       <button @click="$router.push('/about')">
         <div
-          class="text-white font-black hover:drop-shadow-lg [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
+          class="text-white font-black hover:drop-shadow-lg  xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)] [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
         >
           About Us
         </div>
       </button>
       <button @click="$router.push('/cosplay-guests')">
         <div
-          class="text-white font-black hover:drop-shadow-lg [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
+          class="text-white font-black hover:drop-shadow-lg  xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)] [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
         >
           Cosplay Guests
         </div>
       </button>
       <button @click="$router.push('/photograhers')">
         <div
-          class="text-white font-black hover:drop-shadow-lg [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
+          class="text-white font-black hover:drop-shadow-lg  xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)] [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
         >
           Photograhers
         </div>
@@ -54,14 +54,14 @@ function clickToIG() {
       </button>-->
       <button @click="$router.push('/contact-us')">
         <div
-          class="text-white font-black hover:drop-shadow-lg [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
+          class="text-white font-black hover:drop-shadow-lg  xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)] [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
         >
           Contact Us
         </div>
       </button>
       <button @click="clickToIG()">
         <div
-          class="text-white font-black hover:drop-shadow-lg [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
+          class="text-white font-black hover:drop-shadow-lg  xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)] [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
         >
           Our Instagram
         </div>
@@ -71,7 +71,7 @@ function clickToIG() {
     <div>
       <router-view />
     </div>
-    <div class="py-12 text-white text-center text-[1.1rem]">
+    <div class="py-12 text-white text-center xs:text-[2.2rem] sm:text-[1.4rem] lg:text-[1.1rem] ">
       © Toronto Hreatcon. All Rights Reserved. @ {{ new Date().getFullYear() }}
     </div>
   </div>
