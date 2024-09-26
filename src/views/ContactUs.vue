@@ -156,6 +156,7 @@ export default defineComponent({
         if (data.Id) {
           thanks.value = true
           this.cleanForm()
+          thanks.value = true
         } else {
           errorMsg.value = true
         }
