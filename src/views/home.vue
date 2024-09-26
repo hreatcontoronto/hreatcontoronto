@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-1 gap-2 px-[5rem] lg:px-[4rem] py-[12rem]">
+  <div class="grid grid-cols-1 gap-2 px-[5rem] lg:px-[4rem] py-[10rem]">
     <div class="lg:px-[6rem] grid lg:grid-cols-2 xl:grid-cols-4 gap-2">
       <iframe
         class="rounded-xl lg:col-sapn-full h-[100%] w-[100%]"
