@@ -21,7 +21,7 @@
                 :src="founderData.photo[0].thumbnails.card_cover.signedUrl"
               />
             </div>
-            <div class="py-3 px-1">
+            <div class="py-3 lg:px-1 sm:px-[3rem] xs:px-[1rem]">
               <div
                 class="font-black xs:text-[4rem] sm:text-[3.5rem] lg:text-[1.5rem] xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)] [text-shadow:_0_5px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
               >
