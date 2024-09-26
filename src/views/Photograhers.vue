@@ -52,7 +52,7 @@
   </div>
 </template>
 <script lang="ts">
-import { ref, onMounted, createApp, defineComponent } from 'vue'
+import { ref, defineComponent } from 'vue'
 import { apiData } from '../tools/fetchData'
 
 const photograherDatas: any = ref([])

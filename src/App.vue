@@ -1,8 +1,5 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-
 import { useGlobalStore } from '@/stores/test'
-import { defineComponent } from 'vue'
 
 const globalStore = useGlobalStore()
 
@@ -14,7 +11,6 @@ function clickToIG() {
   window.open('https://www.instagram.com/torontoheartcon/', '_blank')!.focus()
 }
 </script>
-
 <template>
   <div class="bg-cover w-screen min-h-screen bg-gradient-to-r from-[#330831] to-[#134b75] py-15 text-white">
     <div class="flex items-center justify-center">
