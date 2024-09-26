@@ -45,6 +45,7 @@
     </div>
     <div class="lg:px-[6rem] grid lg:grid-cols-2 xl:grid-cols-4 gap-2">
       <iframe
+        v-if="baseEventData.googleMapLink"
         class="rounded-xl lg:col-sapn-full h-[100%] w-[100%]"
         :src="`https://www.google.com/maps/${baseEventData.googleMapLink}`"
         style="border: 0"
