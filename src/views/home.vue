@@ -43,16 +43,17 @@
         </div>
       </vue-countdown>
     </div>
-    <div class="lg:px-[6rem] grid lg:grid-cols-2 xl:grid-cols-4 gap-2">
-      <iframe
-        v-if="baseEventData.googleMapLink"
-        class="rounded-xl lg:col-sapn-full h-[100%] w-[100%]"
-        :src="`https://www.google.com/maps/${baseEventData.googleMapLink}`"
-        style="border: 0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      >
-      </iframe>
+    <div class="lg:px-[6rem] grid xs:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-2">
+      <div class="lg:px-[4rem] xs:px-[0rem]">
+        <iframe
+          v-if="baseEventData.googleMapLink"
+          class="rounded-xl lg:col-sapn-full lg:h-[100%] xs:h-[30rem] xs:w-[100%] lg:w-[100%]"
+          :src="`https://www.google.com/maps/${baseEventData.googleMapLink}`"
+          style="border: 0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        />
+      </div>
       <div class="xl:col-span-3 xl:px-[8rem]">
         <div
           class="xs:text-[4.2rem] lg:text-[2rem] text-white font-black hover:drop-shadow-lg xs:[text-shadow:_0_15px_30px_rgb(99_102_241_/_0.8)] [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
@@ -78,7 +79,7 @@
         </div>
         <div class="py-2">
           <button
-            class="lg:text-[1rem] xs:text-[3rem] font-bold bg-[#241137] p-3 rounded-lg shadow-2xl shadow-white/10 hover:bg-[#130126]"
+            class="lg:text-[1rem] xs:text-[3rem] font-bold bg-[#241137] lg:p-3 xs:p-6 rounded-lg shadow-2xl shadow-white/10 hover:bg-[#130126]"
             @click="loadAdmissionPage(baseEventData.TicketSaleURL)"
           >
             Buy Admission
