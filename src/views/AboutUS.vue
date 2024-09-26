@@ -46,11 +46,11 @@
       </template>
     </div>
     <div
-      class="text-center font-bold text-[3rem] [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
+      class="text-center font-bold lg:text-[3rem] xs:text-[4.5rem] [text-shadow:_0_8px_10px_rgb(99_102_241_/_0.8)] hover:[text-shadow:_0_10px_15px_#b5edff]"
     >
       Story
     </div>
-    <div class="text-center text-[1.3rem] lg:px-[16rem] px-[6rem] py-8">
+    <div class="text-center lg:text-[1.3rem] xs:text-[3.6rem] lg:px-[16rem] px-[6rem] py-8">
       {{ storyText }}
     </div>
   </div>

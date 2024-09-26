@@ -71,7 +71,7 @@ function clickToIG() {
     <div>
       <router-view />
     </div>
-    <div class="py-12 text-white text-center xs:text-[2.2rem] sm:text-[1.4rem] lg:text-[1.1rem] ">
+    <div class="py-12 text-white text-center xs:text-[2.6rem] sm:text-[2rem] lg:text-[1.1rem] ">
       © Toronto Hreatcon. All Rights Reserved. @ {{ new Date().getFullYear() }}
     </div>
   </div>
