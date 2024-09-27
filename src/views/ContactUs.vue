@@ -60,7 +60,7 @@
           </div>
         </div>
         <div class="lg:col-span-full">
-          <div class="text-center py-2 font-bold">Your Question</div>
+          <div class="text-center py-2 font-bold">Say the Detail of Question to Us</div>
           <textarea
             rows="4"
             class="border border-white bg-transparent text-white rounded-lg p-2 font-bold w-full"
